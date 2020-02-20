@@ -1,0 +1,53 @@
+{
+    "name": "@mpiroc-org/deployment",
+    "version": "0.0.1",
+    "description": "REPLACEME",
+    "keywords": [],
+    "homepage": "https://github.com/mpiroc-org/.#readme",
+    "bugs": "https://github.com/mpiroc-org/./issues",
+    "license": "UNLICENSED",
+    "author": "Matthew Pirocchi <matthew.pirocchi@gmail.com>",
+    "contributors": [],
+    "main": "out/bin/deployment.js",
+    "types": "out/bin/deployment.d.ts",
+    "repository": "github:mpiroc-org/.",
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint --ext .ts .",
+        "cdk": "cdk",
+        "deploy": "cdk deploy",
+        "synth": "cdk synth"
+    },
+    "engines": {
+        "node": "^12.13.0"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/",
+        "main": "out/bin/deployment.js",
+        "types": "out/bin/deployment.d.ts"
+    },
+    "jest": {
+        "preset": "@mpiroc-org/jest-config"
+    },
+    "dependencies": {
+        "aws-cdk": "^1.26.0",
+        "@aws-cdk/core": "^1.26.0",
+        "@mpiroc-org/pipeline": "^0.0.1"
+    },
+    "devDependencies": {
+        "@microsoft/api-extractor": "^7.7.8",
+        "@mpiroc-org/eslint-config": "^0.0.5",
+        "@mpiroc-org/ts-config": "^0.0.5",
+        "@mpiroc-org/api-extractor-config": "^0.0.5",
+        "@mpiroc-org/jest-config": "^0.0.5",
+        "@types/jest": "^24.0.23",
+        "@types/node": "^12.12.8",
+        "@typescript-eslint/eslint-plugin": "^2.21.0",
+        "@typescript-eslint/parser": "^2.21.0",
+        "eslint": "^6.8.0",
+        "jest": "^24.9.0",
+        "parcel-bundler": "^1.12.4",
+        "ts-jest": "^24.1.0",
+        "typescript": "^3.7.2"
+    }
+}

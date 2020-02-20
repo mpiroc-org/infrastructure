@@ -1,0 +1,130 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@aws-cdk/assert",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@aws-cdk/aws-appsync",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@aws-cdk/aws-codebuild",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@aws-cdk/aws-dynamodb",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@aws-cdk/aws-iam",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@aws-cdk/aws-kms",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@aws-cdk/aws-secretsmanager",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@aws-cdk/aws-ssm",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@aws-cdk/core",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@microsoft/api-extractor",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@mpiroc-org/api-extractor-config",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@mpiroc-org/eslint-config",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@mpiroc-org/iterable",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@mpiroc-org/jest-config",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@mpiroc-org/pipeline",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@mpiroc-org/ts-config",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "@typescript-eslint/typescript-estree",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "aws-cdk",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "aws-sdk",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "eslint",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "graphql",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "graphql-tag",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "graphql-tools",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "jest",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "parcel-bundler",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "source-map-support",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "ts-jest",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "ts-node",
+      "allowedCategories": [ "production" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "production" ]
+    }
+  ]
+}

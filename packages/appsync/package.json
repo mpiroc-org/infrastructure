@@ -1,0 +1,59 @@
+{
+  "name": "@mpiroc-org/appsync",
+  "version": "0.0.1",
+  "description": "Constructs used to create appsync resources",
+  "keywords": [],
+  "homepage": "https://github.com/mpiroc-org/infrastructure#readme",
+  "bugs": "https://github.com/mpiroc-org/infrastructure/issues",
+  "license": "UNLICENSED",
+  "author": "Matthew Pirocchi <matthew.pirocchi@gmail.com>",
+  "contributors": [],
+  "main": "out/lib/index.js",
+  "types": "out/lib/index.d.ts",
+  "repository": "github:mpiroc-org/infrastructure",
+  "scripts": {
+    "build": "tsc && parcel build lib/index.ts --out-dir dist/lib --target node --no-minify && api-extractor run --local --verbose",
+    "lint": "eslint --ext .ts .",
+    "test": "jest 2> out/jest-stderr.log"
+  },
+  "engines": {
+    "node": "^12.13.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "main": "dist/lib/index.js",
+    "types": "dist/lib/index.d.ts"
+  },
+  "jest": {
+    "preset": "@mpiroc-org/jest-config"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-appsync": "^1.26.0",
+    "@aws-cdk/aws-dynamodb": "^1.26.0",
+    "@aws-cdk/aws-iam": "^1.26.0",
+    "@aws-cdk/core": "^1.26.0",
+    "@mpiroc-org/iterable": "^0.0.4",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "graphql-tools": "^4.0.6",
+    "source-map-support": "^0.5.16"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.26.0",
+    "@microsoft/api-extractor": "^7.7.8",
+    "@mpiroc-org/api-extractor-config": "^0.0.5",
+    "@mpiroc-org/eslint-config": "^0.0.5",
+    "@mpiroc-org/jest-config": "^0.0.5",
+    "@mpiroc-org/ts-config": "^0.0.5",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.8",
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "aws-cdk": "^1.26.0",
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.2"
+  }
+}
