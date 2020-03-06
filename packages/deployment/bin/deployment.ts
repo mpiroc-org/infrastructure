@@ -20,7 +20,10 @@ async function main(): Promise<void> {
         {
             owner: `mpiroc-org`,
             repo,
-            branches: [ `master` ],
+            branches: [
+                `master`,
+                `develop`
+            ],
             name: repo,
             stringParameters: [
                 { parameterName: `/github/mpiroc-org/scope` },
