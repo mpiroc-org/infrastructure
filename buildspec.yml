@@ -11,7 +11,7 @@ phases:
       nodejs: 12
   pre_build:
     commands:
-      - echo "branch: $CODEBUILD_SOURCE_VERSION"
+      - echo "branch $CODEBUILD_SOURCE_VERISON"
       - |
         if [ $CODEBUILD_SOURCE_VERSION = "develop" ]; then
           echo "PUBLISH DRYRUN"
