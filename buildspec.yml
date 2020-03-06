@@ -12,9 +12,9 @@ phases:
   pre_build:
     commands:
       - printenv
-      - echo "branch $CODEBUILD_SOURCE_VERISON"
+      - echo "branch $CODEBUILD_WEBHOOK_TRIGGER"
       - |
-        if [ $CODEBUILD_SOURCE_VERSION = "develop" ]; then
+        if [ $CODEBUILD_WEBHOOK_TRIGGER = "branch/develop" ]; then
           echo "PUBLISH DRYRUN"
         fi
       # Note: Assumes echo uses UTF-8 encoding--this is not true on Windows/PowerShell.
