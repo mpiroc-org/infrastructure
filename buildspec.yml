@@ -11,6 +11,11 @@ phases:
       nodejs: 12
   pre_build:
     commands:
+      - echo "branch: $CODEBUILD_SOURCE_VERSION"
+      - |
+        if [ $CODEBUILD_SOURCE_VERSION = "develop" ]; then
+          echo "PUBLISH DRYRUN"
+        fi
       # Note: Assumes echo uses UTF-8 encoding--this is not true on Windows/PowerShell.
       - echo "@$GITHUB_SCOPE:registry=https:$GITHUB_PACKAGE_REGISTRY" >> ~/.npmrc
       - echo "$GITHUB_PACKAGE_REGISTRY/:_authToken=$GITHUB_PERSONAL_ACCESS_TOKEN" >> ~/.npmrc
@@ -22,7 +27,3 @@ phases:
   post_build:
     commands:
       - node common/scripts/install-run-rush.js test
-      - |
-        if [ $CODEBUILD_SOURCE_VERSION = "develop" ]; then
-          echo "PUBLISH DRYRUN"
-        fi
