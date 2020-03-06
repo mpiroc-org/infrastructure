@@ -11,6 +11,7 @@ phases:
       nodejs: 12
   pre_build:
     commands:
+      - printenv
       - echo "branch $CODEBUILD_SOURCE_VERISON"
       - |
         if [ $CODEBUILD_SOURCE_VERSION = "develop" ]; then
