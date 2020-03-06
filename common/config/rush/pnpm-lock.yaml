@@ -8,11 +8,11 @@ dependencies:
   '@aws-cdk/aws-ssm': 1.26.0
   '@aws-cdk/core': 1.26.0
   '@microsoft/api-extractor': 7.7.8
-  '@mpiroc-org/api-extractor-config': 0.0.4_@microsoft+api-extractor@7.7.8
-  '@mpiroc-org/eslint-config': 0.0.4_33b1ece73ecd8ffa3ff0cbf3e43eca45
+  '@mpiroc-org/api-extractor-config': 0.0.5_@microsoft+api-extractor@7.7.8
+  '@mpiroc-org/eslint-config': 0.0.5_33b1ece73ecd8ffa3ff0cbf3e43eca45
   '@mpiroc-org/iterable': 0.0.4
-  '@mpiroc-org/jest-config': 0.0.4
-  '@mpiroc-org/ts-config': 0.0.4_typescript@3.8.3
+  '@mpiroc-org/jest-config': 0.0.5
+  '@mpiroc-org/ts-config': 0.0.5_typescript@3.8.3
   '@rush-temp/appsync': 'file:projects/appsync.tgz'
   '@rush-temp/deployment': 'file:projects/deployment.tgz'
   '@rush-temp/pipeline': 'file:projects/pipeline.tgz_8a2c6235ce1f7df726042468ac0c18dc'
@@ -1657,16 +1657,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-m5lmb/xFsWXyXZzWGps6HR+4itbmEBecr8ec/PO/N68mLgyAOo2TPgSKgz4DV6WHhrQxflWzReNpDA6DIupdxQ==
-  /@mpiroc-org/api-extractor-config/0.0.4_@microsoft+api-extractor@7.7.8:
+  /@mpiroc-org/api-extractor-config/0.0.5_@microsoft+api-extractor@7.7.8:
     dependencies:
       '@microsoft/api-extractor': 7.7.8
     dev: false
     peerDependencies:
       '@microsoft/api-extractor': ^7.7.8
     resolution:
-      integrity: sha512-yOky01RNblNKRNFolSZ12/cfwzzTYgeKN6xduoHFo51WyKnj7XbF6qZkcfSDfGEvJJOoDEOQKJazOuXZrEs3sg==
-      tarball: download/@mpiroc-org/api-extractor-config/0.0.4/060ba6ba56bbc766e93e8e8515fb218c828d7edbf6050b0fd8d6eb74b5c9a6cc
-  /@mpiroc-org/eslint-config/0.0.4_33b1ece73ecd8ffa3ff0cbf3e43eca45:
+      integrity: sha512-fpF4hH2pgu3br2KFDW2ESIO6Oza8CV0K3SGrRnycjwFSfO4D7EF41Ng3aD91AgcX1YRxxDOrbkTiPMZiypjHeQ==
+      tarball: download/@mpiroc-org/api-extractor-config/0.0.5/d015d9719cbdd8bb58a82ed816fd57a89966825ac0357afc5caca0844f79e5f7
+  /@mpiroc-org/eslint-config/0.0.5_33b1ece73ecd8ffa3ff0cbf3e43eca45:
     dependencies:
       '@rushstack/eslint-config': 0.4.2_eslint@6.8.0+typescript@3.8.3
       '@typescript-eslint/eslint-plugin': 2.21.0_1ec42c799066c60ccee8525337e16f9f
@@ -1674,32 +1674,32 @@ packages:
       eslint: 6.8.0
     dev: false
     peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^2.8.0
-      '@typescript-eslint/parser': ^2.20.0
+      '@typescript-eslint/eslint-plugin': ^2.21.0
+      '@typescript-eslint/parser': ^2.21.0
       eslint: ^6.8.0
       typescript: '*'
     resolution:
-      integrity: sha512-uh1E8pUX8oTWUGD5c+rvV626N8ctzTnh41mW8KUe/xuCPGqblemMyfkBwMlbwyfqiynHIcnN/YFKXA6070jyLQ==
-      tarball: download/@mpiroc-org/eslint-config/0.0.4/071c6cfd8a274fa012cc6f319e34dbf1db632c79eea08e28553fc64a9510508f
+      integrity: sha512-7Mdm1tsJeSx5A62HOshwzO+AsORyCCqI7YQPqEsMW0wyDAf/B2vgHpaTiW6H1wT6Vy6UDHBGYELNkj0MjNyOvQ==
+      tarball: download/@mpiroc-org/eslint-config/0.0.5/bf3651647725e72d56d5c0b6dcfe830bcce2d8f788a36eeffa50a611680c6bb5
   /@mpiroc-org/iterable/0.0.4:
     dev: false
     resolution:
       integrity: sha512-Rb+cE8x4+MoX1skpnOsKHd4L+WHS6IhJbIcKeronOpbGm2n5gMvZYI+N2fkVZ1HN14opvRj8saqven4yB6kPDg==
       tarball: download/@mpiroc-org/iterable/0.0.4/330411b842ace8dd1b2d99276289dcf250f15d4e0d393d796755a756f552ff5e
-  /@mpiroc-org/jest-config/0.0.4:
+  /@mpiroc-org/jest-config/0.0.5:
     dev: false
     resolution:
-      integrity: sha512-SLaN3pCUT5eJ+VNzfd9/pML4qyfS1AgyQPtF2THcznkfeF+AyURQyMkdew0zCyjc38JjkuprJZBJbNahB8SqPA==
-      tarball: download/@mpiroc-org/jest-config/0.0.4/b59447b54835446e584bb932f816cd39a89012bb200e70bd9b14e2e1167ffa8b
-  /@mpiroc-org/ts-config/0.0.4_typescript@3.8.3:
+      integrity: sha512-IbhfSd1tfORiNssBQcD45n2x94E6I8WijYhBu9zn39s7Xvcs2SscVDpfLYCVq94u2VfZcGEj28seujAfe7n5+Q==
+      tarball: download/@mpiroc-org/jest-config/0.0.5/112880b0b7379554c815d3bf1547b8744dd93c93b4610efef7f665c0567d8776
+  /@mpiroc-org/ts-config/0.0.5_typescript@3.8.3:
     dependencies:
       typescript: 3.8.3
     dev: false
     peerDependencies:
       typescript: ^3.7.2
     resolution:
-      integrity: sha512-1HfEUAUHuyQAh9OOkO3YZpwA1IcNP46LBXcwfGEXWJmOfYipSFzbVoL+T/xgC7bBYwNEOJZ2t8l9i+GGI2+XZw==
-      tarball: download/@mpiroc-org/ts-config/0.0.4/b2cb19e8f1011513f66dc73d4826053e3cb66d0cc8eb9d725984e93e88ba575b
+      integrity: sha512-0v1/gx6iGI4FhkQT9RHLut8JUyPPV/fLDX2RqQYxIzo1FRmpKCAhjZKNIzAIaDMunHzble+tIJoIN9Y1rHxYtg==
+      tarball: download/@mpiroc-org/ts-config/0.0.5/76393faa812d5daf6da27032062c2915a85370d851bd0d73577105ba31c408f0
   /@mrmlnc/readdir-enhanced/2.2.1:
     dependencies:
       call-me-maybe: 1.0.1
@@ -8952,11 +8952,11 @@ packages:
       '@aws-cdk/aws-iam': 1.26.0
       '@aws-cdk/core': 1.26.0
       '@microsoft/api-extractor': 7.7.8
-      '@mpiroc-org/api-extractor-config': 0.0.4_@microsoft+api-extractor@7.7.8
-      '@mpiroc-org/eslint-config': 0.0.4_33b1ece73ecd8ffa3ff0cbf3e43eca45
+      '@mpiroc-org/api-extractor-config': 0.0.5_@microsoft+api-extractor@7.7.8
+      '@mpiroc-org/eslint-config': 0.0.5_33b1ece73ecd8ffa3ff0cbf3e43eca45
       '@mpiroc-org/iterable': 0.0.4
-      '@mpiroc-org/jest-config': 0.0.4
-      '@mpiroc-org/ts-config': 0.0.4_typescript@3.8.3
+      '@mpiroc-org/jest-config': 0.0.5
+      '@mpiroc-org/ts-config': 0.0.5_typescript@3.8.3
       '@types/jest': 24.9.1
       '@types/node': 12.12.29
       '@typescript-eslint/eslint-plugin': 2.21.0_1ec42c799066c60ccee8525337e16f9f
@@ -8974,17 +8974,17 @@ packages:
     dev: false
     name: '@rush-temp/appsync'
     resolution:
-      integrity: sha512-YQ+z+epwJ99gWvB2SMXbrRkOjyhy7uDvqw+qm8xy8wU/pqIMghRT74Df9Z3XE9nH1HsxphEs+pTiKCMRa3DD8g==
+      integrity: sha512-c7YROSnVJvYpvw1oQRS4HFjSrf+OSM4NIhYH9tYSbYCNnp51Tfe3xLpMZcix3tb0lO26rpyf1M8wG8yPANkvyQ==
       tarball: 'file:projects/appsync.tgz'
     version: 0.0.0
   'file:projects/deployment.tgz':
     dependencies:
       '@aws-cdk/core': 1.26.0
       '@microsoft/api-extractor': 7.7.8
-      '@mpiroc-org/api-extractor-config': 0.0.4_@microsoft+api-extractor@7.7.8
-      '@mpiroc-org/eslint-config': 0.0.4_33b1ece73ecd8ffa3ff0cbf3e43eca45
-      '@mpiroc-org/jest-config': 0.0.4
-      '@mpiroc-org/ts-config': 0.0.4_typescript@3.8.3
+      '@mpiroc-org/api-extractor-config': 0.0.5_@microsoft+api-extractor@7.7.8
+      '@mpiroc-org/eslint-config': 0.0.5_33b1ece73ecd8ffa3ff0cbf3e43eca45
+      '@mpiroc-org/jest-config': 0.0.5
+      '@mpiroc-org/ts-config': 0.0.5_typescript@3.8.3
       '@types/jest': 24.9.1
       '@types/node': 12.12.29
       '@typescript-eslint/eslint-plugin': 2.21.0_1ec42c799066c60ccee8525337e16f9f
@@ -8998,7 +8998,7 @@ packages:
     dev: false
     name: '@rush-temp/deployment'
     resolution:
-      integrity: sha512-39Zeb37f5EJK+GCvmSBFylxMtOUe1+ZQ7KQeXpjYUG5jTAybFnsGLFTHCU7HH4fTx3fqFM3ykcZ7/TVlME5Wpw==
+      integrity: sha512-jcuv/CKOu6/whrbk+Rwfi9P9ZKTx3AdBStMEIB127XZS+2O/yXo15fhdjwtg5+Bvs7oujAPt1A9as154UgwlTg==
       tarball: 'file:projects/deployment.tgz'
     version: 0.0.0
   'file:projects/pipeline.tgz_8a2c6235ce1f7df726042468ac0c18dc':
@@ -9009,10 +9009,10 @@ packages:
       '@aws-cdk/aws-ssm': 1.26.0
       '@aws-cdk/core': 1.26.0
       '@microsoft/api-extractor': 7.7.8
-      '@mpiroc-org/api-extractor-config': 0.0.4_@microsoft+api-extractor@7.7.8
-      '@mpiroc-org/eslint-config': 0.0.4_33b1ece73ecd8ffa3ff0cbf3e43eca45
-      '@mpiroc-org/jest-config': 0.0.4
-      '@mpiroc-org/ts-config': 0.0.4_typescript@3.8.3
+      '@mpiroc-org/api-extractor-config': 0.0.5_@microsoft+api-extractor@7.7.8
+      '@mpiroc-org/eslint-config': 0.0.5_33b1ece73ecd8ffa3ff0cbf3e43eca45
+      '@mpiroc-org/jest-config': 0.0.5
+      '@mpiroc-org/ts-config': 0.0.5_typescript@3.8.3
       '@types/jest': 24.9.1
       '@types/node': 12.12.29
       aws-cdk: 1.26.0
@@ -9030,9 +9030,10 @@ packages:
       '@typescript-eslint/eslint-plugin': '*'
       '@typescript-eslint/parser': '*'
     resolution:
-      integrity: sha512-wrxJPHHERaPiaGwY5hbHIDJztxKul1wbIDBwLHTq8vt7ZEJh4Yhk67Os9zl+tr+sbI2jrn/ViH45ZGohYjk7cQ==
+      integrity: sha512-W/tli6Oe8resXw/LU0xUoj/UymavxwwnbQsUnFQVlP9VJoynw69rBCesQ5Q3+9CMitwsOoVlS7UUTXtILzeRKg==
       tarball: 'file:projects/pipeline.tgz'
     version: 0.0.0
+registry: ''
 specifiers:
   '@aws-cdk/assert': ^1.26.0
   '@aws-cdk/aws-appsync': ^1.26.0
@@ -9043,11 +9044,11 @@ specifiers:
   '@aws-cdk/aws-ssm': ^1.26.0
   '@aws-cdk/core': ^1.26.0
   '@microsoft/api-extractor': ^7.7.8
-  '@mpiroc-org/api-extractor-config': ^0.0.4
-  '@mpiroc-org/eslint-config': ^0.0.4
+  '@mpiroc-org/api-extractor-config': ^0.0.5
+  '@mpiroc-org/eslint-config': ^0.0.5
   '@mpiroc-org/iterable': ^0.0.4
-  '@mpiroc-org/jest-config': ^0.0.4
-  '@mpiroc-org/ts-config': ^0.0.4
+  '@mpiroc-org/jest-config': ^0.0.5
+  '@mpiroc-org/ts-config': ^0.0.5
   '@rush-temp/appsync': 'file:./projects/appsync.tgz'
   '@rush-temp/deployment': 'file:./projects/deployment.tgz'
   '@rush-temp/pipeline': 'file:./projects/pipeline.tgz'
