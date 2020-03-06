@@ -35,5 +35,6 @@ git push
 ```sh
 git checkout master
 git merge develop
+git tag release/0.0.0 # Replace with real version
 git push
 ```
