@@ -22,3 +22,7 @@ phases:
   post_build:
     commands:
       - node common/scripts/install-run-rush.js test
+      - |
+        if [ $CODEBUILD_SOURCE_VERSION = "develop" ]; then
+          echo "PUBLISH DRYRUN"
+        fi
