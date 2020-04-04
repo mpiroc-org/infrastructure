@@ -2,6 +2,12 @@
   "name": "@mpiroc-org/appsync",
   "entries": [
     {
+      "version": "0.0.16",
+      "tag": "@mpiroc-org/appsync_v0.0.16",
+      "date": "Sat, 04 Apr 2020 19:55:42 GMT",
+      "comments": {}
+    },
+    {
       "version": "0.0.15",
       "tag": "@mpiroc-org/appsync_v0.0.15",
       "date": "Sat, 04 Apr 2020 18:56:13 GMT",
