@@ -1,6 +1,6 @@
 {
   "name": "@mpiroc-org/appsync",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Constructs used to create appsync resources",
   "keywords": [],
   "homepage": "https://github.com/mpiroc-org/infrastructure#readme",

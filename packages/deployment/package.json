@@ -1,6 +1,6 @@
 {
     "name": "@mpiroc-org/deployment",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "description": "REPLACEME",
     "keywords": [],
     "homepage": "https://github.com/mpiroc-org/.#readme",
@@ -32,7 +32,7 @@
     "dependencies": {
         "aws-cdk": "^1.26.0",
         "@aws-cdk/core": "^1.26.0",
-        "@mpiroc-org/pipeline": "^0.0.14"
+        "@mpiroc-org/pipeline": "^0.0.15"
     },
     "devDependencies": {
         "@microsoft/api-extractor": "^7.7.8",
