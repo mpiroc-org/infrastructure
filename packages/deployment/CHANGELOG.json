@@ -1,0 +1,17 @@
+{
+  "name": "@mpiroc-org/deployment",
+  "entries": [
+    {
+      "version": "0.0.14",
+      "tag": "@mpiroc-org/deployment_v0.0.14",
+      "date": "Sat, 04 Apr 2020 18:50:00 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Enable CI on develop branch as well as master"
+          }
+        ]
+      }
+    }
+  ]
+}
