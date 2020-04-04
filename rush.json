@@ -50,7 +50,7 @@
             "packageName": "@mpiroc-org/deployment",
             "projectFolder": "packages/deployment",
             "reviewCategory": "production",
-            "shouldPublish": false,
+            "shouldPublish": true,
             "versionPolicyName": "default"
         }
     ]
