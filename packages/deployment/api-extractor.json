@@ -3,5 +3,5 @@
     "extends": "./node_modules/@mpiroc-org/api-extractor-config/api-extractor.json",
   
     // Redundant with the shared config file, but included here to satisfy the schema.
-    "mainEntryPointFilePath": "<projectFolder>/out/lib/index.d.ts"
+    "mainEntryPointFilePath": "<projectFolder>/out/bin/deployment.d.ts"
 }
