@@ -11,8 +11,11 @@
     "main": "out/bin/deployment.js",
     "types": "out/bin/deployment.d.ts",
     "repository": "github:mpiroc-org/.",
+    "files": [
+        "dist/bin/*"
+    ],
     "scripts": {
-        "build": "tsc",
+        "build": "tsc && parcel build bin/deployment.ts --out-dir dist/bin --target node --no-minify && api-extractor run --local --verbose",
         "lint": "eslint --ext .ts .",
         "cdk": "cdk",
         "deploy": "cdk deploy",

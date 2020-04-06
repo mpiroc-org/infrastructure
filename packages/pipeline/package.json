@@ -11,8 +11,11 @@
   "main": "out/lib/index.js",
   "types": "out/lib/index.d.ts",
   "repository": "github:mpiroc-org/infrastructure",
+  "files": [
+    "dist/lib/*"
+  ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && parcel build lib/index.ts --out-dir dist/lib --target node --no-minify && api-extractor run --local --verbose",
     "lint": "eslint --ext .ts .",
     "test": "jest 2> out/jest-stderr.log"
   },
