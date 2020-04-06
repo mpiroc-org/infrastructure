@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@mpiroc-org/appsync",
+      "comment": "Populate files",
+      "type": "none"
+    }
+  ],
+  "packageName": "@mpiroc-org/appsync",
+  "email": "matthew.pirocchi@gmail.com"
+}
