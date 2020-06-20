@@ -3,6 +3,7 @@ import * as cdk from '@aws-cdk/core'
 import { Pipeline } from '../../lib'
 
 describe(`Pipeline`, () => {
+    let app: cdk.App
     let stack: cdk.Stack
 
     const PIPELINE_OWNER: string = `MyPipelineOwner`
@@ -11,10 +12,11 @@ describe(`Pipeline`, () => {
     const PIPELINE_NAME: string = `MyPipelineName`
     const PARAMETER_NAME: string = `/github/mpiroc-org/ci`
     const PARAMETER_VERSION: number = 1
-
+    const DEFAULT_KEY_ARN: string = `arn:aws:kms:us-east-1:257848698535:key/027ebae8-de63-438f-beb2-78feddd5b013`
+    
     beforeEach(async () => {
-        stack = new cdk.Stack(new cdk.App(), `TestStack`)
-        /* eslint-disable no-new */
+        app = new cdk.App()
+        stack = new cdk.Stack(app, `TestStack`)
         await Pipeline.create(stack, `pipeline`, {
             owner: PIPELINE_OWNER,
             repo: PIPELINE_REPO,
@@ -24,8 +26,7 @@ describe(`Pipeline`, () => {
                 parameterName: PARAMETER_NAME,
                 version: PARAMETER_VERSION
             }]
-        })
-        /* eslint-enable no-new */
+        }, DEFAULT_KEY_ARN)
     })
 
     describe(`role`, () => {
@@ -57,6 +58,8 @@ describe(`Pipeline`, () => {
         })
 
         it(`has expected policy document`, () => {
+            
+
             expectCDK(stack).to(haveResourceLike(`AWS::IAM::Policy`, {
                 PolicyDocument: {
                     Statement: [
@@ -119,11 +122,36 @@ describe(`Pipeline`, () => {
                         },
                         {
                             Action: [
+                                `codebuild:CreateReportGroup`,
+                                `codebuild:CreateReport`,
+                                `codebuild:UpdateReport`,
+                                `codebuild:BatchPutTestCases`,
+                            ],
+                            Effect: `Allow`,
+                            Resource: {
+                                'Fn::Join': [
+                                    ``,
+                                    [
+                                        `arn:`,
+                                        { Ref: `AWS::Partition` },
+                                        `:codebuild:`,
+                                        { Ref: `AWS::Region` },
+                                        `:`,
+                                        { Ref: `AWS::AccountId` },
+                                        `:report-group/`,
+                                        { Ref: `pipeline${PIPELINE_NAME}93E141E1` },
+                                        `-*`
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            Action: [
                                 `kms:Decrypt`,
                                 `kms:DescribeKey`
                             ],
                             Effect: `Allow`,
-                            Resource: `arn:aws:kms:us-east-1:257848698535:key/027ebae8-de63-438f-beb2-78feddd5b013`
+                            Resource: DEFAULT_KEY_ARN
                         },
                         {
                             Action: [
@@ -150,7 +178,11 @@ describe(`Pipeline`, () => {
                         }
                     ],
                     Version: `2012-10-17`
-                }
+                },
+                PolicyName: `pipeline${PIPELINE_NAME}RoleDefaultPolicy11DE5E2E`,
+                Roles: [
+                    { Ref: `pipeline${PIPELINE_NAME}Role2B5E0CA8` }
+                ]
             }))
         })
     })

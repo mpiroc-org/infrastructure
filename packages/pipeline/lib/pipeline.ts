@@ -31,7 +31,7 @@ function buildBranchFilterGroup(branch: string): codebuild.FilterGroup {
  * @alpha
  */
 export class Pipeline extends cdk.Construct {
-    private static _defaultKeyPromise: Promise<kms.IKey> | undefined
+    private static _defaultKeyArnPromise: Promise<string> | undefined
     
     private constructor(
         scope: cdk.Construct,
@@ -87,7 +87,7 @@ export class Pipeline extends cdk.Construct {
         )
     }
 
-    private static async _getDefaultKey(scope: cdk.Construct): Promise<kms.IKey> {
+    private static async _getDefaultKeyArn(): Promise<string> {
         const client: KMS = new KMS()
         const key: KMS.DescribeKeyResponse = await client.describeKey({ KeyId: `alias/aws/ssm` }).promise()
         const keyArn: string | undefined = key.KeyMetadata?.Arn
@@ -95,19 +95,27 @@ export class Pipeline extends cdk.Construct {
             throw new Error(`Could not get ARN for key 'alias/aws/ssm'`)
         }
 
-        return kms.Key.fromKeyArn(scope, `DefaultKey`, keyArn)
+        return keyArn
     }
 
     public static async create(
         scope: cdk.Construct,
         id: string,
-        props: IPipelineProps
+        props: IPipelineProps,
+        defaultKeyArnOverride: string | undefined = undefined
     ): Promise<Pipeline> {
-        if (!Pipeline._defaultKeyPromise) {
-            Pipeline._defaultKeyPromise = Pipeline._getDefaultKey(scope)
+        let defaultKeyArn: string
+        if (defaultKeyArnOverride) {
+            defaultKeyArn = defaultKeyArnOverride
+        } else {
+            if (!Pipeline._defaultKeyArnPromise) {
+                Pipeline._defaultKeyArnPromise = Pipeline._getDefaultKeyArn()
+            }
+
+            defaultKeyArn = await Pipeline._defaultKeyArnPromise
         }
 
-        const defaultKey: kms.IKey = await Pipeline._defaultKeyPromise
+        const defaultKey: kms.IKey = kms.Key.fromKeyArn(scope, `DefaultKey`, defaultKeyArn)
 
         return new Pipeline(scope, id, {
             ...props,

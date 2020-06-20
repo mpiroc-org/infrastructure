@@ -26,7 +26,7 @@ export interface IPipelineProps {
 // @alpha (undocumented)
 export class Pipeline extends cdk.Construct {
     // (undocumented)
-    static create(scope: cdk.Construct, id: string, props: IPipelineProps): Promise<Pipeline>;
+    static create(scope: cdk.Construct, id: string, props: IPipelineProps, defaultKeyArnOverride?: string | undefined): Promise<Pipeline>;
     }
 
 

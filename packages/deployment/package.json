@@ -33,8 +33,8 @@
         "preset": "@mpiroc-org/jest-config"
     },
     "dependencies": {
-        "aws-cdk": "^1.26.0",
-        "@aws-cdk/core": "^1.26.0",
+        "aws-cdk": "^1.46.0",
+        "@aws-cdk/core": "^1.46.0",
         "@mpiroc-org/pipeline": "^0.0.17"
     },
     "devDependencies": {
@@ -48,9 +48,9 @@
         "@typescript-eslint/eslint-plugin": "^2.21.0",
         "@typescript-eslint/parser": "^2.21.0",
         "eslint": "^6.8.0",
-        "jest": "^24.9.0",
+        "jest": "^25.5.4",
         "parcel-bundler": "^1.12.4",
-        "ts-jest": "^24.1.0",
+        "ts-jest": "^25.5.1",
         "typescript": "^3.7.2"
     }
 }
