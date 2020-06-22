@@ -2,6 +2,18 @@
   "name": "@mpiroc-org/pipeline",
   "entries": [
     {
+      "version": "0.0.18",
+      "tag": "@mpiroc-org/pipeline_v0.0.18",
+      "date": "Mon, 22 Jun 2020 19:32:31 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Update config versions"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.0.17",
       "tag": "@mpiroc-org/pipeline_v0.0.17",
       "date": "Mon, 06 Apr 2020 23:26:59 GMT",

@@ -1,6 +1,6 @@
 {
   "name": "@mpiroc-org/pipeline",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Constructs used to create CI/CD pipeline stacks",
   "keywords": [],
   "homepage": "https://github.com/mpiroc-org/infrastructure#readme",

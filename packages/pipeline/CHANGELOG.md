@@ -1,6 +1,13 @@
 # Change Log - @mpiroc-org/pipeline
 
-This log was last generated on Mon, 06 Apr 2020 23:26:59 GMT and should not be manually modified.
+This log was last generated on Mon, 22 Jun 2020 19:32:31 GMT and should not be manually modified.
+
+## 0.0.18
+Mon, 22 Jun 2020 19:32:31 GMT
+
+### Updates
+
+- Update config versions
 
 ## 0.0.17
 Mon, 06 Apr 2020 23:26:59 GMT

@@ -35,7 +35,7 @@
   "dependencies": {
     "aws-cdk": "^1.46.0",
     "@aws-cdk/core": "^1.46.0",
-    "@mpiroc-org/pipeline": "^0.0.17"
+    "@mpiroc-org/pipeline": "^0.0.18"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.7.8",
