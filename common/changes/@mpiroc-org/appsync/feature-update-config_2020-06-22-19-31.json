@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@mpiroc-org/appsync",
+      "comment": "Update config versions",
+      "type": "none"
+    }
+  ],
+  "packageName": "@mpiroc-org/appsync",
+  "email": "1623344+mpiroc@users.noreply.github.com"
+}
